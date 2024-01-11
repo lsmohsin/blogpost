@@ -24,6 +24,6 @@ class CheckRole
         }
 
         // Redirect or handle unauthorized access
-        return redirect('posts'); // Change this as per your requirements
+        return redirect('dashboard'); // Change this as per your requirements
     }
 }

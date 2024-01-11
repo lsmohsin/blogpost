@@ -14,6 +14,7 @@ use App\Models\Tag;
 use Illuminate\Support\Facades\Cache;
 use App\Http\Requests\StorePostRequest;
 use App\Events\PostViewed;
+use Illuminate\Support\Facades\Route;
 
 
 class PostController extends Controller

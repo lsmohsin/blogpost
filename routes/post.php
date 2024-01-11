@@ -4,6 +4,8 @@ use App\Http\Controllers\PostController;
 
 use Illuminate\Support\Facades\Route;
 
+Route::middleware(['auth', 'checkRole:admin,member'])->group(function () {
+
 Route::get('/post/create', [PostController::class, 'create'])->name('post.create');
 Route::get('/posts', [PostController::class, 'index'])->name('post.index');
 
@@ -24,5 +26,6 @@ Route::get('/posts/search', [PostController::class, 'search'])->name('post.searc
 
 Route::get('/export-posts', [PostController::class, 'exportCsv'])->name('export.posts');
 
+});
 
 
