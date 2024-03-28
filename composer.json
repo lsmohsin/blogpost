@@ -14,7 +14,8 @@
         "laravel/tinker": "^2.5",
         "laravel/ui": "^3.4",
         "league/csv": "^9.8",
-        "spatie/laravel-permission": "^6.3"
+        "spatie/laravel-permission": "^6.3",
+        "tymon/jwt-auth": "^1.0@dev"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
@@ -28,7 +29,8 @@
         "psr-4": {
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
-            "Database\\Seeders\\": "database/seeders/"
+            "Database\\Seeders\\": "database/seeders/",
+            "Custom\\": "Custom/"
         }
     },
     "autoload-dev": {
@@ -56,6 +58,12 @@
             "dont-discover": []
         }
     },
+
+
+
+
+
+
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",

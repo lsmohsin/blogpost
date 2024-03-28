@@ -1,12 +1,16 @@
 <?php
 
 
-namespace App\Providers;
 
-use App\Services\UploadFile;
+namespace Custom;
+
+use Custom\Users\Providers\UserFileServiceProvider;
+
+
 use Illuminate\Support\ServiceProvider;
 
-class UploadFileServiceProvider extends ServiceProvider
+class ConfigProvider extends ServiceProvider
+
 {
     /**
      * Register services.
@@ -15,9 +19,8 @@ class UploadFileServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind('uploadfile', function () {
-            return new UploadFile();
-        });
+        $this->app->register(UserFileServiceProvider::class);
+
     }
 
     /**

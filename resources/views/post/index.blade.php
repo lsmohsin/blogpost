@@ -61,7 +61,7 @@
                         </td>
                         <td>
                             <a href="{{ route('post.show', $post->id) }}" class="btn btn-primary">View</a>
-                            <a href="{{ route('post.edit', $post->id) }}" class="btn btn-primary">Edit</a>
+                            <a href="{{ route('post.edit', $post->id) }}" class="btn btn-primary">Editff</a>
 
                             <form action="{{ route('post.destroy', ['post' => $post->id]) }}" method="POST" style="display: inline-block;">
                                 @csrf

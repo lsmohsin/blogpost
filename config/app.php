@@ -177,7 +177,9 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        App\Providers\UploadFileServiceProvider::class,
+        \App\Providers\UploadFileServiceProvider::class,
+//        \package\Providers\UserFileServiceProvider::class
+       \Custom\ConfigProvider::class
 
     ],
 
